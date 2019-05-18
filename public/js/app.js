@@ -1,5 +1,3 @@
-console.log('client side javascript....');
-
 // request function in node 2nd argument is function but fetch is 
 // different. We use then() method on the ruturn value on the fetch
 // then we provide callback function in then(() => {}) we want to run.
