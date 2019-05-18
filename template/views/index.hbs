@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="icon" href="./img/dada.ico">
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>This page shows weather meassage based on location.</p>
+        <form action="">
+            <input type="text" placeholder="Loaction">
+            <button>Search</button>
+        </form>
+        <p id="msg-one"></p>
+        <p id="msg-two"></p>
+    </div>
+    {{>footer}}
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
