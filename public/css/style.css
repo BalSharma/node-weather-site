@@ -65,8 +65,8 @@ input {
 
 button {
   cursor: pointer;
-  border: 1px solid #888888;
-  background: #888888;
+  border: 1px solid #333333;
+  background: #2489EE;
   color: white;
   padding: 8px;
 }

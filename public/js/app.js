@@ -41,7 +41,9 @@ weatherForm.addEventListener('submit', (e) => {
     msgTwo.textContent = '';
     const location = search.value;
     if (location) {
-        fetch('http://localhost:3000/view?address=' + location)
+        // heroke setup
+        fetch('/view?address=' + location)
+            // fetch('http://localhost:3000/view?address=' + location)
             .then((res) => {
                 res.json().then((data) => {
                     if (data.error) {

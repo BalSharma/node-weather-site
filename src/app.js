@@ -9,6 +9,9 @@ const forecast = require('./utils/forecast');
 // create a variable to store express application
 const app = express();
 
+// set up port number for heroku provides
+const port = process.env.PORT || 3000;
+
 // defining path for express config
 const pubDir = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../template/views');
@@ -161,6 +164,11 @@ app.get('*', (req, res) => {
 // display on the browser. Useful piece of informaton for dev. It
 // is up and running listening to incoming requests. Ctrl + C kills
 // the process. 
-app.listen(3000, () => {
-    console.log('Server is up... @ 3000');
+// app.listen(3000, () => {
+//     console.log('Server is up... @ 3000');
+// });
+
+// for heroku
+app.listen(port, () => {
+    console.log('Server is up... @' + port);
 });
