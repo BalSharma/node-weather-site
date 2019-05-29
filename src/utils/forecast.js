@@ -27,10 +27,15 @@ const forecast = (lat, long, callback) => {
                 // current: 'It is currently ' + temperature + ' degree out.',
                 // rain: 'Chance of rain ' + precipProbability + '%'
                 current: 'It is currently ' + body.currently.temperature + ' degree out.',
-                rain: 'Chance of rain ' + body.currently.precipProbability + '%'
+                rain: 'Chance of rain ' + body.currently.precipProbability + '%',
+                high: 'Today high is: ' + body.daily.data[0].temperatureHigh,
+                low: 'Today low is: ' + body.daily.data[0].temperatureLow,
+
                 // current: 'It is currently ' + response.body.currently.temperature + ' degree out.',
                 // rain: 'Chance of rain ' + response.body.currently.precipProbability + '%'
+                // daily.data[11].temperatureHigh      temperatureLow
             }
+            // console.log(body.daily.data[0]);
             callback(undefined, data);
         }
     });

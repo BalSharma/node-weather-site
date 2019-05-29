@@ -56,7 +56,9 @@ weatherForm.addEventListener('submit', (e) => {
                         // console.log(data.Data.rain);
                         msgOne.textContent = data.location;
                         msgTwo.textContent = data.Data.current +
-                            '  ' + data.Data.rain;
+                            '  ' + data.Data.rain + '.   ' +
+                            data.Data.high+ '.   ' +
+                            data.Data.low
                     }
                 });
             });
