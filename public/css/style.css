@@ -11,10 +11,9 @@
 body {
   columns: #333333;
   font-family: arial;
-  max-width: 650px;
+  /* max-width: 650px; */
   margin: 0 auto; 
   padding: 0 15px;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -45,12 +44,31 @@ footer {
   margin-top: 16px;
   padding: 16px 0;
 }
-/* flex-grow: 1; tell to take main content tall all leftover space */
+/* flex-grow: 1; tell to take main content tall all leftover space 
+  
+*/
+.family-content {
+  max-width: 95%;
+  margin: 0 auto; 
+  flex-grow: 1;
+  /* padding: 0 15px; */
+}
 .main-content {
+  max-width: 75%;
+  margin: 0 auto; 
   flex-grow: 1;
 }
+
+
 .me {
     border-radius: 70%;
+}
+
+.imageSize {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* use advance technique flex box for sticky footer 

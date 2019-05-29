@@ -138,6 +138,12 @@ app.get('/products', (req, res) => {
     });
 });
 
+app.get('/family', (req, res) => {
+    res.render('family', {
+        title: 'My Family'
+    });
+})
+
 // it is saying match everything /help as long as it was not matched
 // previously. 
 app.get('/help/*', (req, res) => {
